@@ -29,6 +29,7 @@ text-align: left;
   }
   .nav-items{
     display: flex;
+    
   }
   .nav-item{
     list-style: none;
@@ -51,6 +52,9 @@ padding: 8px 20px 8px 20px;
 background-color:  rgb(230, 83, 60);
 
 border-radius: 18px;   
+  }
+  .hide{
+    display: none;
   }
   /* end of header*/
   .banner{
@@ -135,3 +139,20 @@ margin-top: 110px;
     text-align: left;
   }
   /*header section complite without res*/
+
+  /* responsive media query */
+  @media screen and (max-width: 576px) {
+    .nav-items{
+      display: none;
+    }
+    .hide{
+      display: block;
+      color: white;
+      padding-right: 2rem;
+    }
+    .brand{
+      padding-left: 2rem;
+    }
+  }
+  /* navbar is fully complite*/
+  
