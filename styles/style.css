@@ -5,7 +5,8 @@ body{
     font-optical-sizing: auto;
     
     font-style: normal;
-    margin: 0px;padding: 0px;
+    padding: 0px;
+   margin: 0px;
     background: linear-gradient(180.00deg, rgb(0, 0, 0),rgba(0, 0, 0, 1) 100%);
   }
   
@@ -92,7 +93,7 @@ font-size: 4rem;margin-bottom: auto;
 border-radius: 42px;
 background: rgb(230, 83, 60);
 border: none;
-font-size: 15px;font-weight: 800;color: azure;
+font-size: 15px;font-weight: 700;color: azure;
   }
   .d-button{
     padding: 15px 30px 15px 30px;
@@ -293,3 +294,151 @@ letter-spacing: 0.3px;margin-left: -60px;
  
 }
 /* complete section1*/
+.r{
+
+  margin-left: 300px;
+  margin-top: 200px;
+}
+.run{
+  color: white;
+  display: flex;
+  max-width: 1200px;
+justify-content: center;
+position: relative;
+height: 350px;
+
+border-radius: 18px;
+
+background: rgb(34, 34, 34);
+}
+.text{
+  position: absolute; width: 30%;
+}
+.run-text{
+  margin-left: -400px;
+}
+.run-text h1{
+  font-weight: 900;font-size: 50px;
+  margin-bottom: 5px;
+}
+.run-image{
+ 
+position: absolute;
+}
+.class-run-image{
+border-radius: 20px;
+width: 40%;
+margin-left: 700px;
+margin-top: 20px;
+
+}
+/* responsive media query */
+@media screen and (max-width: 576px) {
+
+.run{
+  flex-direction: columns;
+  height: 100vh;width: 100vw;
+}
+.run-text h1{
+  font-weight: 700;font-size: 30px;
+  margin-bottom: 5px;
+}
+.run-text{
+  margin-left: -40px;
+}
+.r{
+
+  margin-left: 0px;
+  margin-top: 50px;
+}
+.class-run-image{
+  
+  }
+  .run-image{
+    border-radius: 20px;
+    width: 100%;
+   margin-right: 1100px;
+    margin-top: 270px;
+    
+  }
+  .text{
+    position: absolute;
+  }
+  .run-text{
+    flex-direction: column;
+  }
+  .join-button{
+    padding: 15px 60px 15px 60px;
+  }
+}
+
+
+.team{
+  color: white;
+  
+  /*margin-left: 12rem;*/
+}
+.team-sec h1{
+  font-size: 48px;
+font-weight: 900;
+line-height: 120%;
+text-align: left;
+margin-bottom: 10px;
+}
+.team-sec{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-bottom: 100px;
+}
+.team-meet{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.team-card{
+
+  padding: 10px;
+  position: relative;
+}
+.team-card img{
+  border-radius: 10px;
+  height: 300px;width: 400px;
+}
+
+.team-text{
+color: white;position: absolute;
+top: 60%;right: 70%;
+}
+
+.r1{
+  margin: 12rem;
+}
+@media screen and (max-width: 576px) {
+  .team-meet{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .team-card img{
+ padding-left: 30px;
+  }
+  .team-card{
+   width:100%;
+  padding: 0px;
+border: 0px;
+align-items: center;
+justify-content: center;
+  }
+  .r1{
+    margin:0px;
+  }
+
+  .team-sec h1{
+    font-size: 20px;
+  font-weight: 500;
+
+  }
+  .team-sec p{
+  width: 400px;
+  }
+}
